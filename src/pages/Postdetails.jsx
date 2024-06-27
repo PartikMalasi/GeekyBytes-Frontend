@@ -111,7 +111,7 @@ const Postdetails = () => {
           </div>
           <img
             src={currentPost.photo}
-            className="w-2/3 h-2/3 mx-auto mt-8 object-cover"
+            className="sm:w-2/3 w-full h-2/3 mx-auto mt-8 object-cover"
             alt=""
           />
           <p className="my-8 mx-auto">{currentPost.desc}</p>
