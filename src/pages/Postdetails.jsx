@@ -115,9 +115,9 @@ const Postdetails = () => {
             alt=""
           />
           <p className="my-8 mx-auto">{currentPost.desc}</p>
-          <div className="flex items-center my-8 space-x-4 font-semibold">
+          <div className="flex flex-col  items-start my-8 gap-2  font-semibold">
             <p>Categories</p>
-            <div className="flex justify-center items-center space-x-2">
+            <div className="flex flex-col sm:flex-row justify-start items-start  gap-2">
               {currentPost.categories?.map((c, i) => {
                 return (
                   <div key={i} className="bg-gray-300 rounded-lg px-3 py-1">
