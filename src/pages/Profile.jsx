@@ -85,30 +85,30 @@ const Profile = () => {
               );
             })}
           </div>
-          <div className="lg:sticky lg:top-16 flex justify-start  lg:justify-end items-start  w-full  md:items-end">
-            <div className="flex flex-col space-y-1 items-start border-black border-2 rounded-lg md:p-4 ">
+          <div className="lg:sticky lg:top-16 flex justify-start  lg:justify-end items-start      md:items-end">
+            <div className="flex flex-col space-y-1 items-start border-black border-2 rounded-lg p-4">
               <h1 className="text-xl font-bold ">Profile</h1>
 
-              <div className="flex flex-row justify-center items-center">
-                <p className="text-md">Username:-</p>
+              <div className="flex flex-row justify-start items-center">
+                <p className="text-md w-auto">Username:-</p>
                 <input
                   value={username}
                   onChange={(e) => {
                     setusername(e.target.value);
                   }}
-                  className="outline-none px-4 py-2 text-gray-500"
+                  className="outline-none px-4 py-2 text-gray-500 w-[50%] sm:w-full"
                   placeholder="Your Username"
                   type="text"
                 />
               </div>
-              <div className="flex flex-row justify-center items-center">
-                <p className="text-md">Email:-</p>
+              <div className="flex flex-row justify-start items-center">
+                <p className="w-auto text-md">Email:-</p>
                 <input
                   value={email}
                   onChange={(e) => {
                     setemail(e.target.value);
                   }}
-                  className="outline-none px-4 py-2 text-gray-500"
+                  className="outline-none px-4 py-2 w-[70%] sm:w-full text-gray-500"
                   placeholder="Your email"
                   type="email"
                 />
