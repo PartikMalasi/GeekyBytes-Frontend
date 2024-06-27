@@ -53,6 +53,7 @@ const Register = () => {
       setloader(false);
       navigate("/login");
     } catch (err) {
+      setloader(false);
       seterror(true);
       setmsg("Same Username or email already exist.");
       console.log("axios m dikkt h");
